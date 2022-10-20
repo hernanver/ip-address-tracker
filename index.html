@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,28 +8,59 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+  integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+  crossorigin=""/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
+    <div class="top">
 
-  IP Address Tracker
+      <h2>
+        IP Address Tracker
+      </h2>
+      <form >
+      <div class="input">
+          <input id="ip_address" type="text" placeholder="  Search for any IP address or domain">
+         <button id="search_btn" >
+            <img src="./images/icon-arrow.svg" width="12px" height="12px" alt="">
+          </button>
+      </div>
+    </form>
 
-  Search for any IP address or domain
+      <div class="box-info">
+        <div class="box-1">
+          <h5>IP Address</h5>
+          <span id="current_ip">192</span>
+        </div>
+        <div class="box-2">
+          <h5>Location</h5>
+          <span id="current_town">Cape Town</span>
+        </div>
+        <div class="box-3">
+          <h5>Timezone</h5>
+          <span id="current_zone">UTC +2:00 <!-- add offset value dynamically using the API --></span>
+        </div>
+        <div class="box-4">
+          <h5>ISP</h5>
+          <span id="current_isp">Rain</span>
+        </div>
+      </div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </div>
+
+    <div id="map">map</div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://hernanverzini.pythonanywhere.com">Hernan Verzini</a>.
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-gray:hsl(0, 0%, 59%);
+    --very-dark-gray:hsl(0, 0%, 17%);
+}
+
+#map { 
+    height: 100vh; 
+    z-index:0;
+}
+
+body{
+    font-size:18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color:darkred;
+    text-decoration: none;
+ }
+
+.top{
+    background-image: url(./images/pattern-bg.png) ;
+    background-size: cover;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    min-height: 15rem;
+}
+
+.top h2{
+    color:white;
+}
+
+.input input{
+ padding:1rem;
+ border-right-style: 10px;
+ width: 50vh;
+ border: none;
+ font-size:14px;
+ border-radius: 8px;
+
+}
+.input button{
+    background-color: black;
+    color:white;
+    padding:1rem;
+    border-left-style:10px ;
+    margin-left: -15px;
+    border: none;
+    font-size:10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.box-info{
+    min-width: 70%;
+   
+    max-height: 25%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    padding:2rem;
+    margin-bottom:-6rem;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    position:relative;
+}
+.box-info h5{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    color:var(--dark-gray);
+    margin-bottom: 1rem;
+    margin-top:-20px;
+}
+.box-1{
+    padding:1rem;
+    text-align: left;
+  
+
+}
+.box-2{
+    padding:1rem;
+    border-left: 1px solid var(--dark-gray);
+    text-align: left;
+
+}
+.box-3{
+
+    padding:1rem;
+    border-left: 1px solid var(--dark-gray);
+    text-align: left;
+}
+.box-4{
+    padding:1rem;
+    border-left: 1px solid var(--dark-gray);
+    text-align: left;
+
+}
+
+
+
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
