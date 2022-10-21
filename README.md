@@ -25,13 +25,12 @@ Users should be able to:
 - Search for any IP addresses or domains and see the key information and location
 
 ### Screenshot
-
-![](./screenshot.jpg)
+<img width="1296" alt="Captura de Pantalla 2022-10-20 a la(s) 08 45 58" src="https://user-images.githubusercontent.com/99434648/196941022-5779f56c-bf82-4358-9961-95a32c32df8b.png">
 
 ### Links
 
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://hv-ip-address-tracking.netlify.app/)
 
 ## My process
 
